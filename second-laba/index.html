@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Laba 2</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="registration">
+        <div class="registration-wrapper">
+          <div class="title">
+            <h1>Conference Online Registration</h1>
+            <p class="paragraph">Please fill in the form below. We'll contact you as soon as possible.</p>
+          </div>
+          <div class="form">
+            <h2>Full name <span>*</span></h2>
+            <div class="full-name">
+              <div class="first-name input-container">
+                <input type="text" id="first-name">
+                <label for="first-name">First Name</label>
+              </div>
+              <div class="last-name input-container">
+                <input type="text" id="last-name">
+                <label for="last-name">Last Name</label>
+              </div>
+            </div>
+            <div class="area">
+              <h2>Area <span>*</span></h2>
+              <select name="area-select" id="area-select">
+                <option value="" disabled selected>Please select</option>
+                <option value="">KEK</option>
+                <option value="">CHEBUREK</option>
+              </select>
+            </div>
+            <div class="address">
+              <h2>Address <span>*</span></h2>
+              <div class="street-address__one input-container">
+                <input type="text" id="address-first">
+                <label for="address-first">Street Address</label>
+              </div>
+              <div class="street-address__two input-container">
+                <input type="text" id="address-two">
+                <label for="address-two">Street Address Line 2</label>
+              </div>
+              <div class="city-state">
+                <div class="city input-container">
+                  <input type="text" id="city">
+                  <label for="city">Сity</label>
+                </div>
+                <div class="state input-container">
+                  <input type="text" id="state">
+                  <label for="state">State / Province</label>
+                </div>
+              </div>
+              <div class="select">
+                <input type="text">
+                <div class="none-select">
+                  <select name="none-select" id="none-select">
+                    <option value="" disabled selected>Please select</option>
+                    <option value="">KEK</option>
+                    <option value="">CHEBUREK</option>
+                  </select>
+                  <label for="none-select"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
