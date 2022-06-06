@@ -35,7 +35,7 @@ submit.addEventListener('click', () => {
   for(let key in user) {
     let userKeys = document.createElement('div')
     userKeys.classList.add(key)
-    userKeys.textContent = key + ': ' + user[key];
+    userKeys.textContent = '1.' + key + ': ' + user[key];
     userContainer.appendChild(userKeys)
   }
 });
