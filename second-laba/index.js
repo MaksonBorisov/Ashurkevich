@@ -15,7 +15,7 @@ const USERS = [];
 submit.addEventListener('click', () => {
   let usersLength = USERS.length + 1;
   let user = {
-    id: USERS.length + 1,
+    id: usersLength,
     firstName: firstName.value,
     lastName: lastName.value,
     area: area.value,
@@ -33,9 +33,13 @@ submit.addEventListener('click', () => {
   document.body.appendChild(userContainer);
 
   for(let key in user) {
-    let userKeys = document.createElement('div')
-    userKeys.classList.add(key)
-    userKeys.textContent = '1.' + key + ': ' + user[key];
-    userContainer.appendChild(userKeys)
+    if (user[key] === '') {
+      alert('Заполните все поля!')
+    } else {
+      let userKeys = document.createElement('div')
+      userKeys.classList.add(key)
+      userKeys.textContent = '1.' + key + ': ' + user[key];
+      userContainer.appendChild(userKeys)
+    }
   }
 });
