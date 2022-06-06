@@ -33,13 +33,9 @@ submit.addEventListener('click', () => {
   document.body.appendChild(userContainer);
 
   for(let key in user) {
-    if (user[key] === '') {
-      alert('Заполните все поля!')
-    } else {
       let userKeys = document.createElement('div')
       userKeys.classList.add(key)
       userKeys.textContent = key + ': ' + user[key];
       userContainer.appendChild(userKeys)
-    }
   }
 });
